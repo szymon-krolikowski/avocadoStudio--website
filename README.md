@@ -4,7 +4,7 @@ The project presents my first website. It is a simple landing page with integrat
 
 ## Demo
 
-https://krolikowski-szymon.github.io/avocadoStudio--website/
+https://szymon-krolikowski.github.io/avocadoStudio--website/
 
 ## Technologies and libraries
 
@@ -13,6 +13,19 @@ https://krolikowski-szymon.github.io/avocadoStudio--website/
 - SASS
 - JavaScript (ES6+)
 - AOS
+
+## Statistic
+
+GTmetrix
+
+- Performance 100%
+- Structure 93%
+- Largest Contentful Paint 608ms
+
+PageSpeed Insight
+
+- Mobile 82%
+- PC 98%
 
 ## Sources
 
