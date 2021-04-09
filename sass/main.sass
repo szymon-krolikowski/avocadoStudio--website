@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Questrial&display=swap')
+
+@import "./_mixins"
+@import "./_colors"
+@import "./_keyframes"
+
+*,
+::after,
+::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    font-family: 'Montserrat', sans-serif
+    scroll-behavior: smooth
+
+.wrapper
+    max-width: 300rem
+    margin: 0 auto
+    overflow: hidden
+
+.headingTwo
+    font-family: 'Questrial', sans-serif
+    font-size: 2.7rem
+    font-weight: 400
+    margin-bottom: 4rem
+
+.headingThree
+    font-family: 'Questrial', sans-serif
+    font-size: 1rem
+    font-weight: 300
+    letter-spacing: 0.4rem
+    text-transform: uppercase
+    margin-bottom: 2rem
+
+.paragraph
+    font-size: 1.4rem
+    font-weight: 400
+    line-height: 2.3rem
+    margin-bottom: 1rem
+    color: $black
+
+.limeColorSpan
+    color: $lime
+
+.button
+    position: relative
+    font-size: 1.5rem
+    letter-spacing: 0.1rem
+    background: none
+    border: none
+    border-bottom: 1px solid $black
+    padding: 0.5rem
+    margin-top: 3rem
+    z-index: 0
+    cursor: pointer
+
+.button::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 0
+    background-color: $lime
+    z-index: -1
+    transition: height 0.5s
+
+.button:hover::after
+    height: 100%
+
+.button--footer
+    color: $white
+    border-bottom: 0.1rem solid $white
+
+.socialMediaLink
+    text-decoration: none
+    color: $black
+    font-size: 1.5rem
+
+.socialMediaLink--footer
+    color: $white
+    font-size: 2rem
+    border-radius: 50%
+    padding: 1rem
+    
+.boxHeading__cube
+    width: 25rem
+    height: 20rem
+    flex-wrap: wrap
+    display: none
+
+.boxHeading__cubeImage
+    opacity: 0
+    padding: 1rem
+    animation: 5s linear 1s infinite alternate showDots
+
+.button--navigationShow,
+.button--upToSide
+    position: fixed
+    top: 5%
+    right: 5%
+    font-size: 2rem
+    border-radius: 50%
+    width: 5rem
+    height: 5rem
+    border: none
+    background-color: $lime
+    z-index: 1000
+    cursor: pointer
+
+.button--upToSide
+    top: 90%
+    transition: opacity 1s
+    opacity: 0
+
+.buttonLinkUpToSide
+    color: $black
+
+.link
+    transition: background-color 0.5s, padding 0.5s
+
+.link:hover,
+    background-color: $lime
+    padding: 1rem
+
+.navigation
+    width: 30rem
+    height: 100vh
+    position: fixed
+    top: 0
+    right: -30rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-color: $black
+    color: $white
+    z-index: 100
+    transition: right 1s
+
+    &__menu
+        height: 50%
+        display: flex
+        flex-direction: column
+    
+    &__link
+        font-size: 3rem
+        text-decoration: none
+        color: $white
+        padding: 1rem 2rem
+
+    &__paragraph
+        font-size: 2rem
+        margin-bottom: 2rem
+
+    &__contact
+        display: none
+
+.navigation__active
+    right: 0
+
+.header
+    @include flexCenterColumn
+    width: 100vw
+    height: 70vh
+    
+
+    &__headingOne
+        font-family: 'Questrial', sans-serif
+        font-size: 3rem
+        letter-spacing: 0.3rem
+        padding: 1.5rem
+        background-color: $lime
+
+    &__headingTwo
+        font-size: 2rem
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.4rem
+        background: $white
+        padding: 0.3rem 0.6rem
+        margin-top: 3rem
+
+.aboutUs
+    @include flexCenterColumn
+    @include sectionPaddingMaxWidth
+
+    &__boxHeadingCube
+        width: 25rem
+        height: 20rem
+        flex-wrap: wrap
+        display: none
+
+.work
+    @include flexCenterColumn
+    @include sectionPaddingMaxWidth
+
+    &__boxText
+        @include flexCenterColumn
+        position: relative
+
+    &__slider
+        width: 100%
+        height: 50vh
+        position: relative
+        margin-top: 3rem
+
+    &__slideImage
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+
+    &__sliderButton
+        font-size: 4rem
+        background: none
+        border: none
+        color: $lime
+        cursor: pointer
+
+    &__sliderButton--next
+        position: absolute
+        top: 50%
+        right: 5%
+        z-index: 1000
+
+    &__sliderButton--previous
+        position: absolute
+        top: 50%
+        left: 5%
+        z-index: 1000
+
+.slider__active
+    opacity: 1
+    animation: showSlider 0.5s
+
+.team
+    @include flexCenterColumn
+    @include sectionPaddingMaxWidth
+    flex-wrap: wrap
+    margin: 0 auto
+    
+    &__headingBox
+        width: 100%
+
+    &__teamBox
+        width: 100%
+        height: 60vh
+        position: relative
+        display: flex
+        margin: 2.5rem auto
+
+.teamBox
+
+    &__image
+        width: 100%
+        height: 100%
+
+    &__text
+        @include flexCenterColumn
+        width: 100%
+        height: 11rem
+        position: absolute
+        bottom: 5vh
+        background: $limeRGBA
+        z-index: 1
+
+    &__paragraphName
+        font-family: 'Questrial', sans-serif
+        font-size: 2rem
+        font-weight: 700 
+        text-transform: uppercase
+        padding: 0.5rem
+
+
+    &__paragraphJob
+        font-size: 1.3rem
+        font-weight: 400
+        letter-spacing: 0.3rem
+        padding: 0.5rem 0rem 1rem
+
+    &__paragraph
+        font-size: 1.5rem
+        padding: 0.5rem
+
+    &__span
+        padding: 0.5rem
+    
+.clients
+    @include flexCenterColumn
+    @include sectionPaddingMaxWidth
+    position: relative
+    flex-wrap: wrap
+    margin: 0 auto
+
+    &__box
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        margin: 2rem auto
+
+    &__client
+        width: 50%
+        padding: 1rem
+    
+    &__clientImage
+        width: 100%
+        filter: contrast(0%)
+    
+    &__background
+        width: 100vw
+        background: $whiteSmoke
+        margin-top: 10rem
+
+.portfolio
+    @include flexCenterColumn
+    @include sectionPaddingMaxWidth
+    flex-wrap: wrap
+    margin: 0 auto
+
+    &__box
+        width: 100%
+        height: 50vh
+        position: relative
+        display: flex
+        margin: 2.5rem auto
+
+    &__subjectProject
+        font-family: 'Questrial', sans-serif
+        font-size: 2rem
+        font-weight: bold
+        text-transform: uppercase
+        padding: 0.5rem
+
+    &__categoryProject
+        font-size: 1.3rem
+        font-weight: 400
+        letter-spacing: 0.3rem
+        padding: 0.5rem
+
+    &__text
+        @include flexCenterColumn
+        width: 100%
+        height: 8rem
+        position: absolute
+        bottom: 0
+        background: $limeRGBA
+        z-index: 1
+
+    &__image
+        width: 100%
+        height: 100%
+
+.footer
+    @include flexCenterColumn
+    width: 100vw
+    background: $black
+    color: $white
+    margin: 0 auto
+    padding: 5rem 3rem 0rem
+
+    &__input
+        width: 100%
+        font-size: 1.8rem
+        background: none
+        border: none
+        border-bottom: 0.1rem solid $white
+        color: $white
+        padding: 0.5rem
+        margin: 1rem auto
+
+    &__textarea
+        width: 100%
+        max-width: 90vw
+        min-height: 20vh
+        height: 20vh
+        font-size: 2.5rem
+        background: none
+        border: none
+        border-bottom: 0.1rem solid $white
+        color: $white
+        padding: 0.5rem
+
+    &__socialMediaBox
+        margin-top: 2rem
+
+
+
+@import "./_medium"
+@import "./_large"

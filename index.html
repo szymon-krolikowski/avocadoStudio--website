@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocado Studio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <button class="button--navigationShow"><i class="fas fa-bars"></i></button>
+        <button class="button--upToSide buttonUp"><a class="buttonLinkUpToSide" href="#home"><i class="fas fa-angle-up"></i></a></button>
+        <nav class="navigation">
+            <div class="navigation__menu">
+                <a href="#home" class="navigation__link"><span class="link">Home</span></a>
+                <a href="#about" class="navigation__link"><span class="link">About</span></a>
+                <a href="#team" class="navigation__link"><span class="link">Team</span></a>
+                <a href="#portfolio" class="navigation__link"><span class="link">Project</span></a>
+                <a href="#contact" class="navigation__link"><span class="link">Contact</span></a>
+            </div>
+            <div class="navigation__contact">
+                <h4 class="headingFour">Phone:</h4>
+                <p class="navigation__paragraph">600 600 600</p>
+                <h4 class="headingFour">E-mail:</h4>
+                <p class="navigation__paragraph">avocado@studio.com</p>
+            </div>
+        </nav>
+
+        <header id="home" class="header">
+            <h1 data-aos="fade-down" class="header__headingOne">Avocado Studio</h1>
+            <h2 data-aos="fade-down" class="header__headingTwo">Web design studio</h2>
+        </header>
+
+        <section id="about" class="aboutUs">
+            <div data-aos="fade-right" class="aboutUs__boxHeading">
+                <h3 class="headingThree">Welcome to our website!</h3>
+                <h2 class="headingTwo">Our creativity <span class="limeColorSpan">is your</span> start of successful projects</h2>
+                <div class="aboutUs__boxHeadingCube boxHeading__cube">
+                    <img src="images/backgroundDot.png" class="aboutUs__boxHeadingCubeImage boxHeading__cubeImage">
+                </div>
+            </div>
+
+            <div class="aboutUs__boxParagraph">
+                <p data-aos="fade-left" class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, nostrum sint, quia nihil reprehenderit porro nisi, ad harum eaque mollitia quibusdam. Aut reiciendis laborum, voluptas totam tempore id qui, eaque ab laboriosam asperiores repellat doloremque aliquam eveniet, nemo cum? Sapiente pariatur ipsam nemo dicta dolorum minima perspiciatis voluptas voluptate dolor?</p>
+                <p data-aos="fade-left" class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odio modi architecto in corporis laborum harum, tenetur deserunt aperiam iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, facere?</p>
+                <button data-aos="fade-left" class="button">More about us</button>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="work__backgroundBox"></div>
+            <div class="work__boxText">
+                <h3 data-aos="fade-right" class="headingThree">Start works</h3>
+                <h2 data-aos="fade-right" class="headingTwo headingTwo--work">Check out the latest <span class="limeColorSpan">projects</span> we completed</h2>
+                <p data-aos="fade-right" class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto mollitia vitae maxime ducimus voluptates repellendus veniam ullam? Praesentium eum ratione tenetur, corrupti consequuntur adipisci!</p>
+                <div class="work__boxHeadingCube boxHeading__cube">
+                    <img src="images/backgroundDot.png" class="work__boxHeadingCubeImage boxHeading__cubeImage">
+                </div>
+            </div>
+            <div data-aos="fade-down-left" class="work__slider">
+                <div class="work__slide">
+                    <img class="work__slideImage" src="images/slider1.webp" alt="">
+                </div>
+    
+                <div class="work__slide">
+                    <img class="work__slideImage" src="images/slider2.webp" alt="">
+                </div>
+    
+                <div class="work__slide">
+                    <img class="work__slideImage" src="images/slider3.webp" alt="">
+                </div>
+    
+                <button class="work__sliderButton work__sliderButton--next"><i class="fas fa-chevron-right"></i></button>
+                <button class="work__sliderButton work__sliderButton--previous"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="team__headingBox">
+                <h3 data-aos="fade-up" class="headingThree">Meet our team</h3>
+                <h2 data-aos="fade-up" class="headingTwo">People behind <span class="limeColorSpan">our success</span></h2>
+            </div>
+
+            <div data-aos="fade-right" class="team__teamBox team__teamBox--one">
+                <img src="images/people1.webp" class="teamBox__image">
+                <div class="teamBox__text">
+                    <p class="teamBox__paragraphName">Simon Johnson</p>
+                    <p class="teamBox__paragraphJob">Web Developer</p>
+                    <p class="teamBox__paragraphSocialMedia">
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://pl.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://pl-pl.facebook.com/"><i class="fab fa-facebook-f"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" class="team__teamBox team__teamBox--two">
+                <img src="images/people2.webp" class="teamBox__image">
+                <div class="teamBox__text">
+                    <p class="teamBox__paragraphName">Mary Walsh</p>
+                    <p class="teamBox__paragraphJob">Web Designer</p>
+                    <p class="teamBox__paragraphSocialMedia">
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://pl.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://pl-pl.facebook.com/"><i class="fab fa-facebook-f"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" class="team__teamBox team__teamBox--three">
+                <img src="images/people3.webp" class="teamBox__image">
+                <div class="teamBox__text">
+                    <p class="teamBox__paragraphName">James Smith</p>
+                    <p class="teamBox__paragraphJob">SEO</p>
+                    <p class="teamBox__paragraphSocialMedia">
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://pl.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://pl-pl.facebook.com/"><i class="fab fa-facebook-f"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink"target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients__background">
+            <article class="clients">
+                <div class="clients__headingBox">
+                    <h3 class="headingThree" data-aos="fade-up">Our clients and partners</h3>
+                    <h2 class="headingTwo" data-aos="fade-up">Happy <span class="limeColorSpan">clients</span></h2>
+                </div>
+        
+                <div class="clients__box">
+                    <div data-aos="fade-down-right" class="clients__client">
+                        <img class="clients__clientImage" src="images/client1.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-down" class="clients__client">
+                        <img  class="clients__clientImage" src="images/client2.png" alt="">
+                    </div>
+                    <div data-aos="fade-down" class="clients__client">
+                        <img  class="clients__clientImage" src="images/client3.png" alt="">
+                    </div>
+                    <div data-aos="fade-down-left" class="clients__client">
+                        <img class="clients__clientImage" src="images/client4.png" alt="">
+                    </div>
+                    <div data-aos="fade-up-right" class="clients__client">
+                        <img class="clients__clientImage" src="images/client5.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" class="clients__client">
+                        <img  class="clients__clientImage" src="images/client6.png" alt="">
+                    </div>
+                    <div data-aos="fade-up" class="clients__client">
+                        <img class="clients__clientImage" src="images/client7.png" alt="">
+                    </div>
+                    <div data-aos="fade-up-left" class="clients__client">
+                        <img class="clients__clientImage" src="images/client8.png" alt="">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio__headingBox">
+                <h3 data-aos="fade-up" class="headingThree">Portfolio</h3>
+                <h2 data-aos="fade-up" class="headingTwo">Our featured <span class="limeColorSpan"> projects</span></h2>
+            </div>
+
+            <div data-aos="zoom-in" class="portfolio__box">
+                <img src="images/portfolio1.webp" alt="" class="portfolio__image">
+                <div class="portfolio__text">
+                    <p class="portfolio__subjectProject">First pencil</p>
+                    <p class="portfolio__categoryProject">Web Design</p>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="portfolio__box">
+                <img src="images/portfolio7.webp" alt="" class="portfolio__image">
+                <div class="portfolio__text">
+                    <p class="portfolio__subjectProject">Isla Lam</p>
+                    <p class="portfolio__categoryProject">Branding</p>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="portfolio__box">
+                <img src="images/portfolio3.webp" alt="" class="portfolio__image">
+                <div class="portfolio__text">
+                    <p class="portfolio__subjectProject">Your style</p>
+                    <p class="portfolio__categoryProject">Shop Online</p>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="portfolio__box">
+                <img src="images/portfolio4.webp" alt="" class="portfolio__image">
+                <div class="portfolio__text">
+                    <p class="portfolio__subjectProject">Little Charry</p>
+                    <p class="portfolio__categoryProject">SEO</p>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="portfolio__box">
+                <img src="images/portfolio2.webp" alt="" class="portfolio__image">
+                <div class="portfolio__text">
+                    <p class="portfolio__subjectProject">Green hope</p>
+                    <p class="portfolio__categoryProject">Web Design</p>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="portfolio__box">
+                <img src="images/portfolio6.webp" alt="" class="portfolio__image">
+                <div class="portfolio__text">
+                    <p class="portfolio__subjectProject">Sophie Lee</p>
+                    <p class="portfolio__categoryProject">Web Design</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__headingBox">
+                    <h3 class="headingThree headingThree--footer" data-aos="fade-up">Get in touch</h3>
+                    <h2 class="headingTwo headingTwo--footer" data-aos="fade-up">Let's <span class="limeColorSpan">work</span> together</h2>
+                </div>
+                <form class="footer__form" data-aos="fade-up">
+                    <input type="text" class="footer__input" placeholder="NAME">
+                    <input type="text" class="footer__input" placeholder="E-MAIL">
+                    <textarea class="footer__textarea" name="" id=""  placeholder="MESSAGE"></textarea>
+                    <br>
+                </form>
+                <button class="button button--footer">Send message</button>
+                <div class="footer__socialMediaBox" data-aos="fade-up">
+                    <p class="paragraph paragrap--footer">
+                        <span class="teamBox__span"><a class="socialMediaLink socialMediaLink--footer"target="_blank" href="https://pl.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink socialMediaLink--footer"target="_blank" href="https://pl-pl.facebook.com/"><i class="fab fa-facebook-f"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink socialMediaLink--footer"target="_blank" href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></span>
+                        <span class="teamBox__span"><a class="socialMediaLink socialMediaLink--footer"target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></span>
+                    </p>               
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/486f02fc03.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
